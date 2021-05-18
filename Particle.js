@@ -1,8 +1,9 @@
 class Particle{
     constructor(x,y,radius){
         var options = {
-            restitution: 0.5,
-            friction: 0
+            restitution: 0,
+            friction: 10000005,
+            density: 225
         }
         this.body = Bodies.circle(x,y,radius,options);
         this.color=color("white");
